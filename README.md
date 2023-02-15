@@ -1,13 +1,9 @@
-# Sample Hardhat Project
+This is a smart contract written in Solidity, a programming language for building decentralized applications on the Ethereum blockchain.
+The contract is called StakERC20 and it allows users to stake a specified ERC20 token and earn rewards in another ERC20 token, both of which can be set by the contract owner.
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+The contract allows users to stake a certain amount of tokens, and in return, they receive a 20% annual percentage yield (APY) in the form of CVIII tokens. The staking ratio is 1:1, meaning that for every token staked, the user receives an equivalent amount of rewards.
 
-Try running some of the following tasks:
+The contract uses a struct called User to keep track of each user's staked amount, start time, and accrued rewards.
+The contract also has functions for calculating and claiming rewards, as well as withdrawing and closing the staked account.
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
-```
+The contract has an access control feature, where only the contract owner can set the stake and reward tokens. Additionally, the contract has error handling mechanisms in place to prevent malicious actions or unintended behavior.
