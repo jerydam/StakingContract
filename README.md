@@ -1,4 +1,3 @@
-This is a smart contract written in Solidity, a programming language for building decentralized applications on the Ethereum blockchain.
 The contract is called StakERC20 and it allows users to stake a specified ERC20 token and earn rewards in another ERC20 token, both of which can be set by the contract owner.
 
 The contract allows users to stake a certain amount of tokens, and in return, they receive a 20% annual percentage yield (APY) in the form of CVIII tokens. The staking ratio is 1:1, meaning that for every token staked, the user receives an equivalent amount of rewards.
